@@ -1,0 +1,122 @@
+css
+/* =========================
+   MANAGE BOOKINGS
+========================= */
+
+.manage-booking-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  padding: 30px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 32px;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.booking-table-container {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.booking-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+.booking-table-container th {
+  background: #f3f4f6;
+  color: #374151;
+  text-align: left;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.booking-table-container td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.booking-table-container tr:hover {
+  background: #f9fafb;
+}
+
+/* =========================
+   STATUS SELECT
+========================= */
+
+.booking-table-container select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+}
+
+.booking-table-container select:focus {
+  border-color: #4f46e5;
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.delete-btn {
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* =========================
+   NO BOOKINGS
+========================= */
+
+.no-bookings {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.no-bookings h2 {
+  color: #1f2937;
+}
+
+.no-bookings p {
+  color: #6b7280;
+}
+

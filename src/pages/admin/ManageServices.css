@@ -1,0 +1,153 @@
+
+/* =========================
+   MANAGE SERVICES
+========================= */
+
+.manage-services-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  padding: 30px;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.service-form-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 35px;
+  max-width: 700px;
+}
+
+.service-form-card h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.service-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.service-form-card form > button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.service-form-card form > button:hover {
+  background: #4338ca;
+}
+
+/* =========================
+   SERVICE LIST
+========================= */
+
+.services-list {
+  background: transparent;
+}
+
+.services-list h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-item {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.service-item h3 {
+  margin-top: 0;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.service-item p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.service-item strong {
+  color: #374151;
+}
+
+.service-item .delete-btn {
+  margin-top: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .manage-services-page {
+    padding: 20px 15px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-form-card {
+    padding: 20px;
+  }
+}
+
